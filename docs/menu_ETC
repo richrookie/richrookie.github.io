@@ -1,0 +1,11 @@
+---
+layout: default
+title: ETC
+nav_order: 4
+description: "Hello World"
+has_children: true
+permalink: /docs/menu_ETC
+---
+
+# Menu ETC
+ETC Menu Test
