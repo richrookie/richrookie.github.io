@@ -1,2 +1,2 @@
-# Jpot777.github.io
+# 영마니 블로그
 > KEEP LEARNING
