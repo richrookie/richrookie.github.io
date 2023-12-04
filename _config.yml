@@ -1,0 +1,9 @@
+remote_theme: just-the-docs/just-the-docs
+
+title: KEEP LEARNING
+description: 평생 공부 블로그
+baseurl: ""
+url: "https://github.com/Jpot777"
+aux_links:
+  "Just the Docs on Github":
+    - "//github.com/Jpot777"
