@@ -9,6 +9,8 @@ aux_links:
   "Github":
     - "//github.com/Jpot777"
 
+permalink: pretty
+
 # Footer "Edit this page on Github" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on Github"
