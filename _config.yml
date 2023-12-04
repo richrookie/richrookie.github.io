@@ -12,6 +12,15 @@ aux_links:
 
 permalink: pretty
 
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - bin/
+   - lib/
+   - "*.gemspec"
+   - "*.gem"
+   - README.md
+
 favicon_ico: "/assets/images/bloglogo.png"
 
 # Footer "Edit this page on Github" link text
