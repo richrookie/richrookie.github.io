@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Factory Pattern
-parent: DesignPattern
+parent: Design Pattern
 grand_parent: Programming
 nav_order: 1
 ---
