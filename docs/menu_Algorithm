@@ -1,0 +1,14 @@
+---
+layout: default
+title: Algorithm
+nav_order: 2
+description: "Hello World"
+has_children: true
+permalink: /docs/menu_Algorithm
+---
+
+# Menu Algorithm
+{:  .no_toc }
+
+Algorithm Menu
+{: .fs-6 .fw-300 }
