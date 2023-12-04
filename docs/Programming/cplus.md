@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Design Pattern
+title: C/C++
 parent: Programming
-nav_order: 3
+nav_order: 1
 ---
