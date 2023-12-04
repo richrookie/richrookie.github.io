@@ -2,10 +2,10 @@
 layout: default
 title: Algorithm
 nav_order: 2
-description: "Hello World"
 has_children: true
 permalink: /docs/menu_Algorithm
 ---
 
 # Menu Algorithm
-Algorithm Menu Test
+
+Algorithm Menu
