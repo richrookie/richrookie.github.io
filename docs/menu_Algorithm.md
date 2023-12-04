@@ -6,6 +6,4 @@ has_children: true
 permalink: /docs/menu_Algorithm
 ---
 
-# Menu Algorithm
-
-Algorithm Menu
+# 🏅Algorithm

@@ -6,6 +6,4 @@ has_children: true
 permalink: /docs/menu_ETC
 ---
 
-# Menu ETC
-
-ETC Menu
+# 🫥ETC

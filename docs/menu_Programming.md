@@ -6,6 +6,4 @@ has_children: true
 permalink: /docs/menu_Programming
 ---
 
-# Menu Programming
-
-Study menu related to programming
+# 💻Programming
