@@ -1,18 +1,16 @@
-remote_theme: just-the-docs/just-the-docs
-
 title: 평생 공부 🌙
-description: 평생 공부 블로그
+remote_theme: just-the-docs/just-the-docs
+color_scheme: "dark"
+description: "평생 공부 블로그"
 baseurl: ""
 url: "https://github.com/Jpot777"
+
 # Aux links for the upper right navigation
 aux_links:
   "Github":
     - "//github.com/Jpot777"
 
 permalink: pretty
-
-# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: "dark"
 
 favicon_ico: "/assets/images/bloglogo.png"
 
