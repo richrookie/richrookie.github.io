@@ -2,5 +2,5 @@
 layout: default
 title: Development Log
 parent: ETC
-nav_order: 2
+nav_order: 1
 ---
