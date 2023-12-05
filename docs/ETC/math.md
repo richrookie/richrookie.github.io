@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tech Interview
+title: Math
 parent: ETC
 nav_order: 2
 ---
