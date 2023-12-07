@@ -3,12 +3,12 @@ remote_theme: just-the-docs/just-the-docs
 color_scheme: "dark"
 description: "평생 공부 블로그"
 baseurl: ""
-url: "https://github.com/Jpot777"
+url: "https://github.com/richrookie"
 
 # Aux links for the upper right navigation
 aux_links:
   "Github":
-    - "//github.com/Jpot777"
+    - "//github.com/richrookie"
 
 permalink: pretty
 
