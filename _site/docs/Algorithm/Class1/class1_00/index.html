@@ -1,0 +1,24 @@
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">using System;</span>
+
+<span class="s">namespace algorithm</span>
+<span class="pi">{</span>
+    <span class="nv">class Program</span>
+    <span class="pi">{</span>
+        <span class="nv">static void Main(string</span><span class="pi">[]</span> <span class="nv">args)</span>
+        <span class="pi">{</span>
+            <span class="nv">string</span><span class="pi">[]</span> <span class="nv">input = Console.ReadLine().Split();</span>
+            <span class="nv">int sum = 0;</span>
+
+            <span class="nv">for (int i = 0; i &lt; input.Length; i++)</span>
+            <span class="pi">{</span>
+                <span class="nv">sum += (int)Math.Pow(int.Parse(input</span><span class="pi">[</span><span class="nv">i</span><span class="pi">]</span><span class="nv">)</span><span class="pi">,</span> <span class="nv">2);</span>
+            <span class="pi">}</span>
+
+            <span class="nv">int result = sum % 10;</span>
+
+            <span class="nv">Console.WriteLine(result);</span>
+        <span class="pi">}</span>
+    <span class="pi">}</span>
+<span class="pi">}</span>
+
+</code></pre></div></div>
