@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Development Log
+title: DevelopmentLog
 parent: ETC
+has_children: true
 nav_order: 1
 ---
