@@ -94,10 +94,53 @@ namespace Algorithm
 
 ## 비교코드 - 1
 
+- 반복문 조합식 -> nPr / r!
+
 <div class="code-example" markdown="1">
 
 ```csharp
+using static System.Console;
+using System.Linq;
+using System;
+using System.Numerics;
 
+namespace Algorithm
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int T = int.Parse(ReadLine());
+
+            for (int i = 0; i < T; i++)
+            {
+                int[] input = ReadLine().Split(' ').Select(int.Parse).ToArray();
+                int N = Math.Min(input[0], input[1]);
+                int M = Math.Max(input[0], input[1]);
+
+                BigInteger answer = 0;
+
+                if(N > M || M < 0)
+                    answer = 0;
+                else
+                {
+                    BigInteger numerator = 1;
+                    BigInteger denominator = 1;
+
+                    for (int j = 0; j < N; j++)
+                    {
+                        numerator *= M - j;
+                        denominator *= j + 1;
+                    }
+
+                    answer = numerator / denominator;
+                }
+
+                WriteLine(answer);
+            }
+        }
+    }
+}
 ```
 
 </div>
