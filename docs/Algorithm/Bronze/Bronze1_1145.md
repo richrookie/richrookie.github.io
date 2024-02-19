@@ -55,6 +55,8 @@ permalink: /docs/Algorithm/Bronze/Bronze1_1145/
 
 ## 코 드
 
+> 5개 자연수 중 제일 작은 수 부터 1씩 더해간다. 그렇게 5개 자연수 중 3개 이상으로 나누어지는지 체크하하는 방식으로 해결!
+
 <div class="code-example" markdown="1">
 
 ```csharp
