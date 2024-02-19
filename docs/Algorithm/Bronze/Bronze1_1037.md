@@ -1,74 +1,76 @@
 ---
 layout: default
-title: "[백준] C# : 약수 (1037번)"
+title: "[백준] C# : 더하기 사이클 (1110번)"
 parent: Bronze
 grand_parent: Algorithm
-nav_order: 2
-permalink: /docs/Algorithm/Bronze/Bronze1_1037/
+nav_order: 3
+permalink: /docs/Algorithm/Bronze/Bronze1_1110/
 ---
 
 ## 문 제
 
-> 양수 A가 N의 진짜 약수가 되려면, N이 A의 배수이고, A가 1과 N이 아니어야 한다. 어떤 수 N의 진짜 약수가 모두 주어질 때, N을 구하는 프로그램을 작성하시오.
+> 0보다 크거나 같고, 99보다 작거나 같은 정수가 주어질 때 다음과 같은 연산을 할 수 있다. 먼저 주어진 수가 10보다 작다면 앞에 0을 붙여 두 자리 수로 만들고, 각 자리의 숫자를 더한다. 그 다음, 주어진 수의 가장 오른쪽 자리 수와 앞에서 구한 합의 가장 오른쪽 자리 수를 이어 붙이면 새로운 수를 만들 수 있다. 다음 예를 보자.
+>
+> 26부터 시작한다. 2+6 = 8이다. 새로운 수는 68이다. 6+8 = 14이다. 새로운 수는 84이다. 8+4 = 12이다. 새로운 수는 42이다. 4+2 = 6이다. 새로운 수는 26이다.
+>
+> 위의 예는 4번만에 원래 수로 돌아올 수 있다. 따라서 26의 사이클의 길이는 4이다.
+>
+> N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작성하시오.
 
 ## 입 력
 
-> 첫째 줄에 N의 진짜 약수의 개수가 주어진다. 이 개수는 50보다 작거나 같은 자연수이다. 둘째 줄에는 N의 진짜 약수가 주어진다. 1,000,000보다 작거나 같고, 2보다 크거나 같은 자연수이고, 중복되지 않는다.
+> 첫째 줄에 N이 주어진다. N은 0보다 크거나 같고, 99보다 작거나 같은 정수이다.
 
 ```yaml
-2
-4 2
+26
+```
+
+```yaml
+55
 ```
 
 ```yaml
 1
-2
 ```
 
 ```yaml
-6
-3 4 2 12 6 8
+0
 ```
 
 ```yaml
-14
-14 26456 2 28 13228 3307 7 23149 8 6614 46298 56 4 92596
+71
 ```
 
 ## 출 력
 
-> 첫째 줄에 패턴을 출력하면 된다.
-
-```yaml
-8
-```
+> 첫째 줄에 N의 사이클 길이를 출력한다.
 
 ```yaml
 4
 ```
 
 ```yaml
-24
+3
 ```
 
 ```yaml
-185192
+60
+```
+
+```yaml
+1
+```
+
+```yaml
+12
 ```
 
 ## 코 드
-
-- 두 번째 입력란에 N의 약수들이 주어진다. 두 가지 경우를 생각하면 쉽게 풀 수 있는 문제!
-
-1. 경우-1 : 입력이 하나일 때, 제곱한 값이 정답. 왜? 소수인 숫자일 경우 문제에서 양수 A(입력값)가 1과 N이 아니어야 한다고 하였기 때문!
-
-1. 경우-2 : 입력이 하나 이상일 때, 입력갑셍서 '최소 x 최대' 한 값이 정답!
 
 <div class="code-example" markdown="1">
 
 ```csharp
 using static System.Console;
-using System.Linq;
-using System;
 
 namespace Algorithm
 {
@@ -76,18 +78,24 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            int count = int.Parse(ReadLine());
+            int N = int.Parse(ReadLine());
+            int answer = N;
+            int count = 0;
 
-            int[] input = ReadLine().Split(' ').Select(int.Parse).ToArray();
-            Array.Sort(input);
-            int answer = 0;
+            while(true)
+            {
+                int num0 = answer / 10;
+                int num1 = answer % 10;
+                int sum = num0 + num1;
 
-            if(input.Length == 1)
-                answer = input[0] * input[0];
-            else
-                answer = input[count - 1] * input[0];
+                answer = num1 * 10 + sum % 10;
+                count++;
 
-            WriteLine(answer);
+                if(N == answer)
+                    break;
+            }
+
+            WriteLine(count);
         }
     }
 }
